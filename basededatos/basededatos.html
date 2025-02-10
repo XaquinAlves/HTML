@@ -7,9 +7,10 @@
 </head>
 
 <body>
+    <a name="subir"></a>
     <h1>Tutorial de MySQL</h1>
     <a href="#introduccion">Introducción</a><br />
-    <a href="#mostrarbasedatos">show databases</a><br />
+    <a href="#mostrarbase">show databases</a><br />
     <a href="#creartabla">Creación de una tabla y mostrar sus
         campos</a><br />
     <a href="#cargarregistros">Carga de registros a una tabla y su
@@ -37,126 +38,149 @@
 
         Se recomienda usar siempre minúsculas. Es más el sitio tutorialesprogramacionya.com está instalado sobre un
         servidor Linux por lo que todos los ejercicios deberán respetarse mayúsculas y minúsculas.</p>
-    <a name="mostrarbasedatos"></a>
+    <a href="#subir">Subir</a>
+    <a name="mostrarbase"></a>
     <h2>show databases</h2>
     <p>Una base de datos es un conjunto de tablas.<br>
 
         Una base de datos tiene un nombre con el cual accederemos a ella.<br>
-        
-        Vamos a trabajar en una base de datos ya creada en el sitio tutorialesprogramacionya.com, llamada "administracion".<br>
-        
+
+        Vamos a trabajar en una base de datos ya creada en el sitio tutorialesprogramacionya.com, llamada
+        "administracion".<br>
+
         Para que el servidor nos muestre las bases de datos existentes, se lo solicitamos enviando la instrucción:<br>
-        
+
         &nbsp;&nbsp;&nbsp;&nbsp;show databases;<br>
-        
+
         Nos mostrará los nombres de las bases de datos, debe aparecer en este sitio "administracion".
-        </p>
+    </p>
+    <a href="#subir">Subir</a>
     <a name="creartabla"></a>
     <h2>Creación de una tabla y mostrar sus campos</h2>
-    <p>Una base de datos almacena sus datos en tablas.
+    <p>Una base de datos almacena sus datos en tablas.<br>
 
-        Una tabla es una estructura de datos que organiza los datos en columnas y filas; cada columna es un campo (o atributo) y cada fila, un registro. La intersección de una columna con una fila, contiene un dato específico, un solo valor.
-        
-        Cada registro contiene un dato por cada columna de la tabla.
-        
-        Cada campo (columna) debe tener un nombre. El nombre del campo hace referencia a la información que almacenará.
-        
-        Cada campo (columna) también debe definir el tipo de dato que almacenará.
-        Las tablas forman parte de una base de datos.
-        
-        Nosotros trabajaremos con la base de datos llamada "administracion", que ya hemos creado en el servidor tutorialesprogramacionya.com
-        
-        Para ver las tablas existentes en una base de datos tipeamos:
-        
-            show tables;
-        Deben aparecer todas las tablas que han creado los visitantes al sitio tutorialesprogramacionya.com
-        
-        Al crear una tabla debemos resolver qué campos (columnas) tendrá y que tipo de datos almacenarán cada uno de ellos, es decir, su estructura.
-        
-        La tabla debe ser definida con un nombre que la identifique y con el cual accederemos a ella.
-        
-        Creamos una tabla llamada "usuarios", tipeamos:
-        
-        create table usuarios (
-             nombre varchar(30),
-             clave varchar(10)
-        );
-        Si intentamos crear una tabla con un nombre ya existente (existe otra tabla con ese nombre), mostrará un mensaje de error indicando que la acción no se realizó porque ya existe una tabla con el mismo nombre.
-        
-        Para ver las tablas existentes en una base de datos tipeamos nuevamente:
-        
-            show tables;
-        Ahora aparece "usuarios" entre otras que ya pueden estar creadas.
-        
-        Cuando se crea una tabla debemos indicar su nombre y definir sus campos con su tipo de dato. En esta tabla "usuarios" definimos 2 campos:
-        
-        - nombre: que contendrá una cadena de hasta 30 caracteres de longitud, 
-                  que almacenará el nombre de usuario y
-        - clave:  otra cadena de caracteres de 10 de longitud, que guardará la clave de 
-                  cada usuario.
-        Cada usuario ocupará un registro de esta tabla, con su respectivo nombre y clave.
-        
-        Para ver la estructura de una tabla usamos el comando "describe" junto al nombre de la tabla:
-        
-            describe usuarios;
-        Aparece lo siguiente:
-        
-        Field  Type          Null
-        _________________________
-        nombre varchar(30)   YES
-        clave  varchar(10)   YES
-        Esta es la estructura de la tabla "usuarios"; nos muestra cada campo, su tipo, lo que ocupa en bytes y otros datos como la aceptación de valores nulos etc, que veremos más adelante en detalle.
-        
-        Para eliminar una tabla usamos "drop table". Tipeamos:
-        
-            drop table usuarios;
-        Si tipeamos nuevamente:
-        
-            drop table usuarios;
-        Aparece un mensaje de error, indicando que no existe, ya que intentamos borrar una tabla inexistente.
-        
-        Para evitar este mensaje podemos tipear:
-        
-            drop table if exists usuarios;
-        En la sentencia precedente especificamos que elimine la tabla "usuarios" si existe.
-        
-        Servidor de MySQL instalado en forma local.
-        Cada vez que ingresamos a "Workbench" debemos seleccionar la base de datos "administracion", mediante la cláusula "use" y posteriormente ejecutar comandos SQL sobre dicha base de datos:
-        
-        use administracion;
-        También podemos hacer doble clic en la ventana "SCHEMAS" para su selección. </p>
+        Una tabla es una estructura de datos que organiza los datos en columnas y filas; cada columna es un campo (o
+        atributo)
+        y cada fila, un registro. La intersección de una columna con una fila, contiene un dato específico, un solo
+        valor.<br>
+
+        Cada registro contiene un dato por cada columna de la tabla.<br>
+
+        Cada campo (columna) debe tener un nombre. El nombre del campo hace referencia a la información que
+        almacenará.<br>
+
+        Cada campo (columna) también debe definir el tipo de dato que almacenará.<br>
+        Las tablas forman parte de una base de datos.<br>
+
+        Nosotros trabajaremos con la base de datos llamada "administracion", que ya hemos creado en el servidor
+        tutorialesprogramacionya.com<br>
+
+        Para ver las tablas existentes en una base de datos tipeamos:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; show tables;
+        Deben aparecer todas las tablas que han creado los visitantes al sitio tutorialesprogramacionya.com<br>
+
+        Al crear una tabla debemos resolver qué campos (columnas) tendrá y que tipo de datos almacenarán cada uno de
+        ellos,
+        es decir, su estructura.<br>
+
+        La tabla debe ser definida con un nombre que la identifique y con el cual accederemos a ella.<br>
+
+        Creamos una tabla llamada "usuarios", tipeamos:<br>
+
+        &nbsp;create table usuarios (<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nombre varchar(30),<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clave varchar(10)<br>
+        &nbsp;);<br>
+        Si intentamos crear una tabla con un nombre ya existente (existe otra tabla con ese nombre), mostrará un mensaje
+        de
+        error indicando que la acción no se realizó porque ya existe una tabla con el mismo nombre.<br>
+
+        Para ver las tablas existentes en una base de datos tipeamos nuevamente:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; show tables;<br>
+        Ahora aparece "usuarios" entre otras que ya pueden estar creadas.<br>
+
+        Cuando se crea una tabla debemos indicar su nombre y definir sus campos con su tipo de dato. En esta tabla
+        "usuarios"
+        definimos 2 campos:<br>
+
+        - nombre: que contendrá una cadena de hasta 30 caracteres de longitud,
+        que almacenará el nombre de usuario y<br>
+        - clave: otra cadena de caracteres de 10 de longitud, que guardará la clave de
+        cada usuario.<br>
+        Cada usuario ocupará un registro de esta tabla, con su respectivo nombre y clave.<br>
+
+        Para ver la estructura de una tabla usamos el comando "describe" junto al nombre de la tabla:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; describe usuarios;<br>
+        Aparece lo siguiente:<br>
+
+        Field Type &nbsp;&nbsp;&nbsp;&nbsp; Null<br>
+        _________________________<br>
+        nombre varchar(30) &nbsp; YES<br>
+        clave varchar(10) &nbsp;&nbsp; YES<br>
+        Esta es la estructura de la tabla "usuarios"; nos muestra cada campo, su tipo, lo que ocupa en bytes y otros
+        datos como la aceptación de valores nulos etc, que veremos más adelante en detalle.<br>
+
+        Para eliminar una tabla usamos "drop table". Tipeamos:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; drop table usuarios;<br>
+        Si tipeamos nuevamente:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; drop table usuarios;<br>
+        Aparece un mensaje de error, indicando que no existe, ya que intentamos borrar una tabla inexistente.<br>
+
+        Para evitar este mensaje podemos tipear:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;drop table if exists usuarios;<br>
+        En la sentencia precedente especificamos que elimine la tabla "usuarios" si existe.<br>
+
+        Servidor de MySQL instalado en forma local.<br>
+        Cada vez que ingresamos a "Workbench" debemos seleccionar la base de datos "administracion", mediante la
+        cláusula "use" y posteriormente ejecutar comandos SQL sobre dicha base de datos:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; use administracion;<br>
+        También podemos hacer doble clic en la ventana "SCHEMAS" para su selección.</p>
+    <a href="#subir">Subir</a>
     <a name="cargarregistros"></a>
     <h2>Carga de registros a una tabla y su recuperación</h2>
-    <p>Un registro es una fila de la tabla que contiene los datos propiamente dichos. Cada registro tiene un dato por cada columna.
+    <p>Un registro es una fila de la tabla que contiene los datos propiamente dichos. Cada registro tiene un dato por
+        cada columna.<br>
 
-        Recordemos como crear la tabla "usuarios":
-        
-        create table usuarios (
-             nombre varchar(30),
-             clave varchar(10)
-        );
-        Al ingresar los datos de cada registro debe tenerse en cuenta la cantidad y el orden de los campos.
-        
-        Ahora vamos a agregar un registro a la tabla:
-        
-        insert into usuarios (nombre, clave) values ('MarioPerez','Marito');
-        Usamos "insert into". Especificamos los nombres de los campos entre paréntesis y separados por comas y luego los valores para cada campo, también entre paréntesis y separados por comas.
-        
-        La tabla usuarios ahora la podemos graficar de la siguiente forma:
-        
-        nombre	clave
-        MarioPerez	Marito
-        Es importante ingresar los valores en el mismo orden en que se nombran los campos, si ingresamos los datos en otro orden, no aparece un mensaje de error y los datos se guardan de modo incorrecto.
-        
-        Note que los datos ingresados, como corresponden a campos de cadenas de caracteres se colocan entre comillas simples. Las comillas simples son OBLIGATORIAS.
-        
-        Para ver los registros de una tabla usamos "select":
-        
-            select nombre,clave from usuarios;
-        Aparece un registro.
-        
-        El comando "select" recupera los registros de una tabla. Luego del comando select indicamos los nombres de los campos a rescatar.
-        </p>
+        Recordemos como crear la tabla "usuarios":<br>
+
+        &nbsp; create table usuarios ( <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; nombre varchar(30), <br>
+        &nbsp;&nbsp;&nbsp;&nbsp; clave varchar(10) <br>
+        &nbsp; ); <br>
+        Al ingresar los datos de cada registro debe tenerse en cuenta la cantidad y el orden de los campos.<br>
+
+        Ahora vamos a agregar un registro a la tabla:<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;insert into usuarios (nombre, clave) values ('MarioPerez','Marito');<br>
+        Usamos "insert into". Especificamos los nombres de los campos entre paréntesis y separados por comas y luego los
+        valores para cada campo, también entre paréntesis y separados por comas.<br>
+
+        La tabla usuarios ahora la podemos graficar de la siguiente forma:<br>
+
+        nombre clave<br>
+        MarioPerez Marito<br>
+        Es importante ingresar los valores en el mismo orden en que se nombran los campos, si ingresamos los datos en
+        otro orden, no aparece un mensaje de error y los datos se guardan de modo incorrecto.<br>
+
+        Note que los datos ingresados, como corresponden a campos de cadenas de caracteres se colocan entre comillas
+        simples. Las comillas simples son OBLIGATORIAS.<br>
+
+        Para ver los registros de una tabla usamos "select":<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; select nombre,clave from usuarios;<br>
+        Aparece un registro.<br>
+
+        El comando "select" recupera los registros de una tabla. Luego del comando select indicamos los nombres de los
+        campos a rescatar.
+    </p>
+    <a href="#subir">Subir</a>
 </body>
 
 </html>
