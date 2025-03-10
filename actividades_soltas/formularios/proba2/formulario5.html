@@ -1,78 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Formularios 2: la venganza del CIS</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <form action="mailto:pizzasricas@gmail.com" method="post" enctype="text/plain">
-            <fieldset>
-                <legend>Seleccione tipo y cantidad de pizzas</legend>
-                Pizza: <select name="pizza1">
-                    <option value="1">Margarita</option>
-                    <option value="2">Marinana</option>
-                    <option value="3">Diavola</option>
-                    <option value="4">4 fromagi</option>
-                </select> Cantidad: <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select> <br>
-                Pizza: <select name="pizza2">
-                    <option value="1">Margarita</option>
-                    <option value="2">Marinana</option>
-                    <option value="3">Diavola</option>
-                    <option value="4">4 fromagi</option>
-                </select> Cantidad: <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select> <br>
-                Pizza: <select name="pizza3">
-                    <option value="1">Margarita</option>
-                    <option value="2">Marinana</option>
-                    <option value="3">Diavola</option>
-                    <option value="4">4 fromagi</option>
-                </select> Cantidad: <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select> <br>
-            </fieldset>
-            <fieldset>
-                <legend>Datos</legend>
-                Nombre: <input type="text" name="nombre_cliente" size="20"><br>
-                Dirección: <input type="text" name="direccion" size="30"><br>
-                Teléfono: <input type="text" name="telf" size="15"><br>
-            </fieldset>
-            <input type="submit" value="Enviar">
-        </form>
-    </body>
+
+<head>
+    <title>Formularios 2: la venganza del CIS</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="mailto:pizzasricas@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Seleccione tipo y cantidad de pizzas</legend>
+            <label for="pizza1">Pizza:</label> <select name="pizza1">
+                <option value="1">Margarita</option>
+                <option value="2">Marinana</option>
+                <option value="3">Diavola</option>
+                <option value="4">4 fromagi</option>
+            </select> <label for="cant1">Cantidad: </label> <select name="cant1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select> <br>
+            <label for="pizza2">Pizza:</label> <select name="pizza2">
+                <option value="1">Margarita</option>
+                <option value="2">Marinana</option>
+                <option value="3">Diavola</option>
+                <option value="4">4 fromagi</option>
+            </select> <label for="cant2">Cantidad: </label> <select name="cant2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select> <br>
+            <label for="pizza3">Pizza:</label> <select name="pizza3">
+                <option value="1">Margarita</option>
+                <option value="2">Marinana</option>
+                <option value="3">Diavola</option>
+                <option value="4">4 fromagi</option>
+            </select> <label for="cant3">Cantidad: </label> <select name="cant3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Datos</legend>
+            <label>Nombre: <input type="text" name="nombre_cliente" size="20"></label><br>
+            <label>Dirección: <input type="text" name="direccion" size="30"> </label><br>
+            <label>Teléfono: <input type="text" name="telf" size="15"></label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br><br>
+    <form method="post" action="scripts/webforms.php">
+        Buscar:
+        <input name="buscar" id="buscar" placeholder="Google" tabindex="5">
+        <br><br><br>
+        <label for="form-name">Nombre</label>
+        <input name="form-name" id="formname" type="text" required="true" tabindex="2"> <br><br><br>
+        <label for="form-email">Email</label>
+        <input name="form-email" id="formemail" type="email" required="true" autofocus tabindex="1"> <br><br>
+        <br>
+        <label for="form-url">URL</label>
+        <input name="form-url" id="formurl" type="url" tabindex="3"> <br><br><br>
+        <label for="form-comment">Comentarios</label>
+        <textarea name="form-comment" id="formcomment" required="true" tabindex="4"> </textarea> <br><br><br>
+        <input type="submit">
+    </form>
+</body>
+
 </html>
