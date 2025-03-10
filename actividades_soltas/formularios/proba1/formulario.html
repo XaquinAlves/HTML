@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formularios</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form action="" method="post">
+        Nombre
+        <input type="text" name="nombre" size="20"><br>
+        Edad
+        <input type="text" name="edad" size="10"><br>
+        <input type="submit" value="enviar">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        Introduzca su email:
+        <input type="text" name="emilio" size="30"><br>
+        Introduzca su contraseña:
+        <input type="password" name="pass1" size="20"><br>
+        Repita su contraseña
+        <input type="password" name="pass2" size="20"><br>
+        Seleccione las peliculas a pedir:<br>
+        <input type="checkbox" name="how_h" value="how_high"> How High <br>
+        <input type="checkbox" name="pinea" value="pineapple_express"> Pineapple Express <br>
+        <input type="checkbox" name="cac" value="cheek_and_chong"> Cheeek and Chong <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        Que sistema operativo utiliza mas?<br>
+        <input type="radio" name="so" value="1"> Windows <br>
+        <input type="radio" name="so" value="2"> Linux <br>
+        <input type="submit" value="enviar">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        <h1>Cúal es la velocidad de la luz?</h1>
+        300000 Km por segundo.<input type="button" onclick="javascript:alert('Respota correcta');"
+            value="Correcta?"><br>
+        200000 Km por segundo.<input type="button" onclick="javascript:alert('Respota incorrecta');"
+            value="Correcta?"><br>
+        100000 Km por segundo.<input type="button" onclick="javascript:alert('Respota incorrecta');"
+            value="Correcta?"><br>
+    </form>
+    <br><br><br>
+    <form action="../../form-result.php" method="post" enctype="multipart/form-data">
+        Sube un archivo:
+        <input type="file" name="foto[]" multiple accept=".jpg, .png">
+        <br>
+        <input type="submit" value="Enviar datos">
+    </form>
+    <br><br><br>
+    <form>
+        <label for="titulo">Blog de HTML</label>
+        <input type="text" id="titulo" name="titulo" size="30" value="Cómo u
+       tilizar el control hidden"><br /> <br />
+        <label for="contenido">Contenido del artículo:</label><br />
+        <textarea id="contenido" name="contenido" cols="60" rows="5">
+        El control input hidden permite tener contenidos ocultos al usuari
+       o pero accesibles a JavaScript
+        </textarea><br /><br />
+        <button type="submit">Actualizar artículo</button>
+        <input type="hidden" id="actId" name="artId" value="5643">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        Usuario:
+        <input type="text" name="emilio" size="20"><br>
+        Contraseña:
+        <input type="password" name="pass1" size="20"><br>
+        <input type="image" name="boton-envio" src="images/enviar.png" alt="Enviar formulario">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        Ingrese su Nombre:
+        <input type="text" name="nombre2" size="20"><br>
+        Ingrese su Email:
+        <input type="text" name="email" size="30"><br>
+        Ingrese su DNI:
+        <input type="text" name="dni" size="12"><br>
+        Ingrese su Curriculum:<br>
+        <textarea name="curriculum" rows="10" cols="80"></textarea><br>
+        <input type="submit" value="enviar">
+    </form>
+    <br><br><br>
+    <form action="" method="post">
+        Seleccione su pais:<br>
+        <select name="pais" size="7">
+            <option value="1">Argentina</option>
+            <option value="2" selected>España</option>
+            <option value="3">México</option>
+            <option value="4">Guatemala</option>
+            <option value="5">Honduras</option>
+            <option value="7">El Salvador</option>
+            <option value="8">Venezuela</option>
+            <option value="9">Colombia</option>
+            <option value="10">Cuba</option>
+            <option value="11">Bolivia</option>
+            <option value="13">Perú</option>
+        </select><br />
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="" method="post">
+        Seleccione uno o varios email(Presione Ctrl para seleccionar varios):<br>
+        <select name="emilios[]" size="4" multiple>
+            <option value="1">emiliofalso123@yahoo.com</option>
+            <option value="2">norespondoanada@hotmail.com</option>
+            <option value="3">contactodecontactar@gmail.wd</option>
+            <option value="4">puntopuntopunto@arroba.com</option>
+            <option value="5">dotdotdot@gotcha.us</option>
+            <option value="6">industriaspaco@pacos.pc</option>
+            <option value="7">nadadeloquemedigas@meinteresa.tv</option>
+            <option value="8">quemiras@poraqui.gl</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="" method="post">
+        Nombre de usuario:
+        <input type="text" name="username" size="20"><br>
+        Clave:
+        <input type="password" name="pass5" size="20"><br>
+        <button type="submit"> <img src="images/enviar.png" alt="enviar formulario">Ingreso al <br> sitio</button>
+    </form>
+    <form action="mailto:pizzasricas@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Seleccione tipo y cantidad de pizzas</legend>
+            Pizza: <select name="pizza1">
+                <option value="1">Margarita</option>
+                <option value="2">Marinana</option>
+                <option value="3">Diavola</option>
+                <option value="4">4 fromagi</option>
+            </select> Cantidad: <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select> <br>
+            Pizza: <select name="pizza1">
+                <option value="1">Margarita</option>
+                <option value="2">Marinana</option>
+                <option value="3">Diavola</option>
+                <option value="4">4 fromagi</option>
+            </select> Cantidad: <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select> <br>
+            Pizza: <select name="pizza1">
+                <option value="1">Margarita</option>
+                <option value="2">Marinana</option>
+                <option value="3">Diavola</option>
+                <option value="4">4 fromagi</option>
+            </select> Cantidad: <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos</legend>
+            Nombre: <input type="text" name="nombre_cliente" size="20"><br>
+            Dirección: <input type="text" name="direccion" size="30"><br>
+            Teléfono: <input type="text" name="telf" size="15"><br>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
