@@ -11,15 +11,15 @@
                 <legend>Datos de la camiseta</legend>
                 <label>Introduce la talla: 
                     <input type="number" name="talla" id="talla" min="36" max="50" step="2">
-                </label><br>
+                </label><br><br>
                 <label for="largo">Introduce los cm. de largo que deseas: </label>
                 <input type="range" name="largo" id="largo" min="30" max="100" step="2" value="50"
                     onchange="javascript:document.getElementById('salida').value=this.value+' cm';">
-                    <output id="salida">50 cm</output><br>
+                    <output id="salida">50 cm</output><br><br>
                 <label for="colorcami">Selecciona un color: </label>
-                <input type="color" name="colorcami" id="colorcami"><br>
+                <input type="color" name="colorcami" id="colorcami"><br><br>
                 <label for="fecnac">Indica la fecha de nacimiento para un sorteo: </label>
-                <input type="date" name="fecnac" id="fecnac"><br>
+                <input type="date" name="fecnac" id="fecnac"><br><br>
             </fieldset>
             <fieldset>
                 <legend>Datos de envío a Galicia</legend>
@@ -28,18 +28,18 @@
                     <option value="2">A Coruña</option>
                     <option value="3">Ourense</option>
                     <option value="4">Lugo</option>
-                </select><br>
+                </select><br><br>
                 <label for="direccion">Introduzca la dirección completa:<br></label>
-                <textarea name="direccion" id="direccion"></textarea><br>
-                <label>Telefono: <input type="tel" name="tlf" id="tlf"></label> <br>
-                <label>Blog/Web: <input type="url" name="clt_website" id="clt_website"></label><br>
+                <textarea name="direccion" id="direccion"></textarea><br><br>
+                <label>Telefono: <input type="tel" name="tlf" id="tlf"></label> <br><br>
+                <label>Blog/Web: <input type="url" name="clt_website" id="clt_website"></label><br><br>
                 <label>Dirección de correo electrónico:
                      <input type="email" name="clt_emilio" id="clt_emilio">
-                </label><br>
+                </label><br><br>
                 <label for="semana">Introduce la semana que quiere recibir la camiseta: </label>
-                <input type="week" name="semana" id="semana"><br>
+                <input type="week" name="semana" id="semana"><br><br>
                 <label for="hora">Introduzca una hora para recibir el envio</label>
-                <input type="time" name="hora" id="hora"><br>
+                <input type="time" name="hora" id="hora"><br><br>
             </fieldset>
             <br><br><br>
             <button type="submit">Enviar/Validar</button>

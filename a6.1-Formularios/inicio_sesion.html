@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <script>
         function hacer() {
+            alert(document.getElementById('username').value)
             if (document.getElementById('username').value == "perico"
                 && document.getElementById('userpass').value == "1234") {
                 window.open("envio_camiseta.html");
@@ -20,9 +21,9 @@
         <fieldset>
             <legend>Datos de usuario</legend>
             <label for="username">Nombre de usuario: </label>
-            <input type="text" name="username" placeholder="Usuario"><br>
+            <input type="text" name="username" id="username" placeholder="Usuario"><br>
             <label for="pass">Contaseña: </label>
-            <input type="password" name="userpass"><br>
+            <input type="password" name="userpass" id="userpass"><br>
             <input type="button" value="Aceptar" onclick="hacer();">
         </fieldset>
     </form>
