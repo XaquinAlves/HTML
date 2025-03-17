@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="" method="post">
+            <label>Nombre*: <input type="text" name="nombre" id="nombre" required="true"
+                 tabindex="1" accesskey="N" pattern="[A-Za-z]+"></label><br><br>
+            <label>Correo electrónico*: <input type="text" name="email" id="email"
+                 required="true" tabindex="2" placeholder="ejemplo@dominio.com" 
+                 accesskey="E" autofocus="true"></label><br><br>
+            <label>URL: <input type="url" name="mi_url" id="mi_url" tabindex="3"
+                placeholder="https://github.com/XaquinAlves"></label><br><br>
+            <label>Fecha: <input type="date" name="fecha" id="fecha" disabled="false"></label><br><br>
+            <label for="mi_num">Número(min -10, max10):</label>
+            <input type="number" name="mi_num" id="mi_num" tabindex="4" min="-10" max="10"><br><br>
+            <label>Teléfono: <input type="tel" name="mi_tel" id="mi_tel" tabindex="5" 
+                accesskey="T" pattern="[0-9]{9}" ></label><br><br>
+            <label>Color favorito: <input type="color" name="mi_color" id="mi_color"></label><br><br>
+            <button type="submit" name="btn_enviar" id="btn_enviar">Enviar</button>
+        </form>
+    </body>
+</html>
