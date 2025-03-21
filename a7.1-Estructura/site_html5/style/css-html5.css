@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0b3c5a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background: #4682b4;
+    color: #ffffff;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.container {
+    display: flex; /* Flexbox para alinear main y aside */
+    margin-top: 70px; /* Sumar altura del header y nav */
+}
+
+main {
+    flex: 1; /* Toma el espacio restante */
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article, section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+aside {
+    width: 17%; /* Ancho de la barra lateral */
+    background: #eaeaea; /* Color de fondo diferenciador */
+    border: 1px solid #ddd;
+    margin-left: 0px; /* Espaciado entre main y aside */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #0b3c5a;
+    color: white;
+}
