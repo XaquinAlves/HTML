@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+    background-color: #f5eaea;
+    margin: 0 auto;
+    width: 720px;
+}
+
+header {
+    text-align: center;
+    color: rgb(55, 82, 60);
+    width: 100%; /* Hacer que el encabezado ocupe todo el ancho */
+}
+
+header h1{
+    margin: 0; /* Elimina el margen en todas las direcciones */
+    padding: 0; /* Elimina el padding en todas las direcciones */
+    color:#3E8E41;;
+}
+
+figure {
+    margin: 0; /* Elimina el margen en todas las direcciones */
+    padding: 0; /* Elimina el padding en todas las direcciones */
+    text-align: left; /* Alinea el contenido del figure a la izquierda */
+}
+
+figure img {
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0; /* Elimina el margen alrededor de la imagen */
+}
+
+nav {
+    margin: 0; /* Eliminamos márgenes para que se vea mejor */
+    padding: 0; /* Eliminamos padding en el nav */
+    background-color: #3E8E41; /* Color de fondo verde para el nav (más oscuro) */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usamos flexbox para un menú horizontal */
+    justify-content: center; /* Centre la lista horizontalmente */
+}
+
+nav ul li {
+    margin: 0 10px; /* Menor margen entre los elementos */
+    padding: 10px 15px; /* Espaciado interno más cómodo */
+    text-transform: capitalize;
+    font-size: 18px; /* Ajustamos el tamaño de fuente */
+}
+
+nav ul li a {
+    color: #ffffff; /* Cambiada a blanco para contrastar con el fondo */
+    text-decoration: none;
+}
+
+.container {
+    display: flex; /* Usamos flexbox en el contenedor para organizar main y aside */
+    margin-top: 0; /* Eliminamos margen superior */
+}
+
+main {
+    flex: 3; /* Permite que main ocupe más espacio */
+    margin: 0; /* Eliminamos márgenes */
+    padding: 0; /* Eliminamos padding en main */
+}
+
+section {
+    background-color: rgb(131, 207, 154);
+    margin: 0; /* Eliminamos márgenes */
+    padding: 10px; /* Espaciado interno para el contenido */
+}
+
+aside {
+    width: 155px; /* Ancho del aside */
+    background-color: #2cb34d; 
+    margin: 0; /* Eliminamos márgenes para que esté pegado a main */
+    padding: 10px; /* Agregamos padding para el contenido interior */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+aside ul {
+    list-style-type: disc; /* Asegura que el tipo de viñeta sea "disc" */
+    padding-left: 20px; /* Ajusta el padding de izquierda para que las viñetas estén dentro */
+    margin: 0; /* Eliminamos el margen para que no se salga del aside */
+}
+
+aside li {   
+    margin: 5px 0; /* Espaciado entre los elementos de la lista */
+}
+
+article {
+    background-color: rgb(211, 240, 224);
+    margin: 6px 10px 11px 10px;
+    border-radius: 10px;
+    border: solid 2px #c26916;
+    padding: 5px;
+}
+
+footer {
+    background-color: rgb(60, 90, 67);
+    color: cornsilk;
+    text-align: center;
+    width: 100%;
+    margin: 0; /* Eliminamos márgenes para que esté adyacente a main */
+    padding: 10px 0; /* Espaciamos el footer */
+    clear: both; /* Aseguramos que el footer no se superponga */
+}
