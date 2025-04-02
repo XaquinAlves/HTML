@@ -1,0 +1,15 @@
+h1{
+    color:red;
+    font-family: Arial;
+    font-size: large;;
+}
+
+p{
+    color: gray;
+    font-family: Arial;
+    font-size: medium;
+    width: 160px;
+    margin: 30px;
+    border: 10px groove #00C;
+    padding:40px;
+}
