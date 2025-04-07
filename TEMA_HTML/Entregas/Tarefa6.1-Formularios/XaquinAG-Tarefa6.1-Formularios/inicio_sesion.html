@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Inicion de sesión</title>
+    <meta charset="UTF-8">
+    <script>
+        function hacer() {
+            if (document.getElementById('username').value == "perico"
+                && document.getElementById('userpass').value == "1234") {
+                window.open("envio_camiseta.html");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Inicio de Sesión</h3>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="username">Nombre de usuario: </label>
+            <input type="text" name="username" id="username" placeholder="Usuario"><br>
+            <label for="pass">Contaseña: </label>
+            <input type="password" name="userpass" id="userpass"><br>
+            <input type="button" value="Aceptar" onclick="hacer();">
+        </fieldset>
+    </form>
+</body>
+
+</html>
