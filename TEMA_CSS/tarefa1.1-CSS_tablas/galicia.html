@@ -5,47 +5,7 @@
     <meta charset="UTF-8">
     <title>Tabla de Ejemplo</title>
 
-    <style>
-       body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        table {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        caption {
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        th {
-            border: 3px solid #3498db;
-            /*Borde:color, grosor y estilo*/
-            background-color: #f2f2f2;
-            /*Color/fondo de los encabezados*/
-            padding: 10px;
-        }
-
-        td {
-            border-color: #2ecc71;
-            /* Color del borde */
-            border-width: 2px;
-            /* Grosor del borde */
-            border-style: solid;
-            /* Estilo del borde */
-            padding: 8px;
-            text-align: center;
-        }
-
-        tr:hover {
-            background-color: #d1e0e0;
-            /*Color/fondo al pasar el ratón */
-        }
-    </style>
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
@@ -54,31 +14,36 @@
         <tr>
             <th>Nombre</th>
             <th>Edad</th>
+            <th>Email</th>
             <th>Ciudad</th>
             <th>País</th>
         </tr>
         <tr>
             <td>Juan</td>
             <td>25</td>
+            <td><a href="mailto:juan@pazo.gal">juan@pazo.gal</a></td>
             <td rowspan="2">Madrid</td>
             <td rowspan="2">España</td>
         </tr>
         <tr>
             <td>Ana</td>
             <td>30</td>
+            <td><a href="mailto:ana@seurt.es">ana@seurt.es</a></td>
         </tr>
         <tr>
             <td>Mike</td>
             <td>28</td>
+            <td><a href="mailto:mike@tableopen.uk">mike@tableopen.uk</a></td>
             <td rowspan="2">Londres</td>
             <td rowspan="2">Reino Unido</td>
         </tr>
         <tr>
             <td>Emma</td>
             <td>22</td>
+            <td><a href="mailto:emma34@newstyle.uk">emma34@newstyle.uk</a></td>
         </tr>
         <tr>
-            <td colspan="4">Relación de contactos en Europa</td>
+            <td colspan="5" class="columnasvarias">Relación de contactos en Europa</td>
         </tr>
     </table>
 </body>

@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+th {
+    border: 3px solid #3498db;
+    /*Borde:color, grosor y estilo*/
+    background-color: #f2f2f2;
+    /*Color/fondo de los encabezados*/
+    padding: 10px;
+}
+
+td {
+    border-color: #2ecc71;
+    /* Color del borde */
+    border-width: 2px;
+    /* Grosor del borde */
+    border-style: solid;
+    /* Estilo del borde */
+    padding: 8px;
+    text-align: center;
+}
+
+td:nth-child(1):not(.columnasvarias) {
+    background-color: aqua;
+}
+
+td:nth-child(2) {
+    background-color: burlywood;
+}
+
+td:nth-child(3) {
+    background-color: coral;
+}
+
+td:nth-child(4) {
+    background-color: lightgreen;
+}
+
+td:nth-child(5) {
+    background-color: lightpink;
+}
+
+tr:hover {
+    background-color: #d1e0e0;
+    /*Color/fondo al pasar el ratón */
+}
+
+a:link {
+    color: #3498db;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: blue;
+    background-color: burlywood;
+}
+
+a:active {
+    color: brown;
+}
