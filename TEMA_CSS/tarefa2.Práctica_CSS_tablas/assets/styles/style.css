@@ -31,5 +31,29 @@ h1 {
 
 .property-table th {
     background-color: #d7af4a;
-    text: white;
+    color: white;
+}
+
+.coruna {
+    background-color: #f2a900;
+}
+
+.lugo {
+    background-color: #a95c2b;
+}
+
+.ourense {
+    background-color: #e4b241;
+}
+
+.pontevedra {
+    background-color: #c97b34;
+}
+
+.property-table tr:hover > td:not([rowspan]) {
+    background-color: lightyellow;
+}
+
+.property-table td[rowspan] {
+    pointer-events: none;
 }
