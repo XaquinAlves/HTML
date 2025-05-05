@@ -53,9 +53,12 @@ td:nth-child(5) {
     background-color: lightpink;
 }
 
-tr:hover {
-    background-color: #d1e0e0;
-    /*Color/fondo al pasar el ratón */
+td:hover {
+    background-color: lightyellow;
+}
+
+td:nth-child(1):hover {
+    background-color: lightyellow
 }
 
 a:link {
