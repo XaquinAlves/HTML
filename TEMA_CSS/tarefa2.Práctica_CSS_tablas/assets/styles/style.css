@@ -1,0 +1,35 @@
+.property-table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #f5f0e1;
+}
+
+.property-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.property-table img {
+    max-width: 150px;
+    height: auto;
+}
+
+.property-table td, th {
+    border: 1px solid #cccccc;
+}
+
+.property-table th {
+    background-color: #d7af4a;
+    text: white;
+}

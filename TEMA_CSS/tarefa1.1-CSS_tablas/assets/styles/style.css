@@ -57,7 +57,7 @@ td:nth-child(5) {
     background-color: lightpink;
 }
 
-tr, td:hover{
+tr td:hover{
     background-color: lightyellow;
 }
 
