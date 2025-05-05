@@ -37,6 +37,10 @@ td:nth-child(1):not(.columnasvarias) {
     background-color: aqua;
 }
 
+td, .columnasvarias {
+    background-color: #f9f9f9;
+}
+
 td:nth-child(2) {
     background-color: burlywood;
 }
@@ -53,7 +57,7 @@ td:nth-child(5) {
     background-color: lightpink;
 }
 
-tr td:hover {
+tr, td:hover{
     background-color: lightyellow;
 }
 
