@@ -53,12 +53,12 @@ td:nth-child(5) {
     background-color: lightpink;
 }
 
-td:hover {
+tr td:hover {
     background-color: lightyellow;
 }
 
 td:nth-child(1):hover {
-    background-color: lightyellow
+    background-color: lightyellow;
 }
 
 a:link {
