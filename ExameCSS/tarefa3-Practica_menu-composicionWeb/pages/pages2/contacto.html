@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../assets/styles/style_common.css">
+    <link rel="stylesheet" href="../../styles/style_specific.css">
+    <link rel="stylesheet" href="../../assets/styles/style_menu.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../../index.html">Presentación</a></li>
+                    <li><a href="../galicia2.html">Turismo en Galicia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Registro de usuario</h1>
+            <fieldset class="property-fieldset">
+                <form action="mailto:registro@domino.com" method="post">
+                    <table class="form-table">
+                        <tr>
+                            <td>
+                                <label for="username">Nombre de usuario:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="username" name="nombre" required tabindex="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="surname">Apellidos:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="surname" name="apellidos" required tabindex="2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="passwd">Contraseña:</label>
+                            </td>
+                            <td>
+                                <input type="password" id="passwd" name="contraseña" required tabindex="3">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="subjects">Temas que me interesan:<br></label>
+                            </td>
+                            <td>
+                                <select name="temas" id="subjects" multiple
+                                title="Selecciona los temas en los que estás interesado: " tabindex="4">
+                                <option value="1">Cultura</option>
+                                <option value="2">Deportes</option>
+                                <option value="3">Ciencia</option>
+                                <option value="4">Tecnología</option>
+                                <option value="5">Otros</option>
+                            </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="meet">Dinos como nos conociste:</label>
+                            </td>
+                            <td>
+                                <select name="conocer" id="meet" title="Dinos como nos conociste:" tabindex="5">
+                                    <option value="1">Amig@s</option>
+                                    <option value="2">Prensa</option>
+                                    <option value="3">Redes sociales</option>
+                                    <option value="4">Televisión</option>
+                                    <option value="5">Radio</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="userpicture">Suba una foto para su perfil:</label>
+                            </td>
+                            <td>
+                                <input type="file" id="userpicture" name="fotoperfil" accept=".png, .jpg" tabindex="6">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <label for="comment">Comentario:<br></label>
+                            </td>
+                            <td>
+
+                                <textarea name="comentario" id="comment" placeholder="Introduzca sus comentarios." tabindex="7"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="provincia">Selecciona tu provincia: </label>
+                            </td>
+                            <td>
+                                <select name="provincia" id="provincia" title="Selecciona tu provincia:" selected="1" tabindex="8">
+                                    <option value="1">Seleccione la provincia</option>
+                                    <option value="2">Pontevedra</option>
+                                    <option value="3">A Coruña</option>
+                                    <option value="4">Ourense</option>
+                                    <option value="5">Lugo</option>
+                                    <option value="6">Asturias</option>
+                                    <option value="7">Cantabria</option>
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit" tabindex="9">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        © 2025 Turismo en Galicia |
+        <a href="https://www.turismo.gal/" target="_blank">
+            Oficina de Turismo de Galicia
+        </a>
+    </footer>
+</body>
+
+</html>

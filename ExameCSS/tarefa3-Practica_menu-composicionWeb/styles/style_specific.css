@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.property-table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: #f5f0e1;
+    color: black;
+}
+
+.property-table td, th {
+    border: #d6cece solid 1px;
+    padding: 10px;
+}
+
+.property-table p:first-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+.property-table th {
+    text-align: center;
+    font-weight: bold;
+    background-color:  #f4b99e;
+}
+
+.property-table img {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.property-table .first-row:hover > th, .first-row:hover + tr, .first-row:hover + tr + tr {
+    background: #934c0d;
+    color: white;
+}
+
+#paraf_presentacion p {
+    text-align: center;
+
+}
+
+.property-fieldset {
+    margin: 15px;
+    padding: 10px;
+    border: 1px thin teal;
+}
+
+.property-fieldset .form-table {
+    width: 100%;
+}
+
+.property-fieldset label {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.property-fieldset input {
+    font-family: Georgia, monospace;
+    width: 25%;
+}
+
+.property-fieldset select {
+    font-family: Georgia, sans-serif;
+    margin: 5px;
+}
+
+.property-fieldset #subjects {
+    min-width: 100px;
+    min-height: 90px;
+}
+
+.property-fieldset input[type="file"] {
+    width: 100%;
+}
+
+.property-fieldset textarea {
+    font-family: Georgia, sans-serif;
+    color: blue;
+    width: 50%;
+    height: 200px;
+}
+
+.property-fieldset button {
+    background-color: tan;
+    border-color: tan;
+    padding: 10px 20px;
+    border: outset;
+    cursor: pointer;
+}
+
+.property-fieldset button:hover {
+    background-color: #d7af4a;
+    color: white;
+    border: inset;
+}

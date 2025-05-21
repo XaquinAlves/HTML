@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    /* Añade un margen de 20px alrededor del cuerpo */
+    background-color: #f5f0e1
+}
+
+section {
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #41321e;
+    padding: 5px;
+}

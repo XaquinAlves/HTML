@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    font-family: Arial;
+    text-align: center;
+    /* Centrar el menú */
+    margin-bottom: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+    /* Eliminar puntos de la lista */
+    display: flex;
+    /* Convertir el ul en un contenedor flex */
+    justify-content: center;
+    /*Determina la disposición de elementos Flex */
+}
+
+#menu a {
+    padding: 10px 20px;
+    background-color: #dedcd4;
+    text-align: center;
+}
+
+#menu a:link,
+#menu a:visited {
+    color: #6c0909;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #980c0c;
+    color: #ffffff;
+}
+
+#menu a[href="index.html"] {
+    background-color: #980c0c;
+    color: #ffffff;
+}
+
+#menu a[href="galicia2.html"] {
+    background-color: #980c0c;
+    color: #ffffff;
+}
+
+#menu a[href="contacto.html"] {
+    background-color: #980c0c;
+    color: #ffffff;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pedido de pizza</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <a id="inicio_pagina"></a>
+        <h1>Pedido de pizza</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#personal">Personalizacion</a></li>
+            <li><a href="#datos_entrega">Datos entrega</a></li>
+            <li><a href="#claves_entrega">Claves entrega</a></li>
+            <li><a href="#otra_info">Otra información</a></li>
+            <li><a href="#metodo_pago">Método pago</a></li>
+            <li><a href="#enviar">Enviar</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="mailto:pizzasya@eldom.com?subject=Pedido" method="post" enctype="multipart/form-data">
+            <section>
+                <a id="personal"></a>
+                <fieldset>
+                    <legend>
+                        <h2><a href="#inicio_pagina"><img src="images/casa.png" alt="iconocasa"></a>Pizza napolitana -
+                            Personalización</h2>
+                    </legend>
+                    <table border="0">
+                        <caption>Selecciona los ingredientes extra...</caption>
+                        <tr>
+                            <th rowspan="3">Ingredientes:</th>
+                            <td><input type="checkbox" value="1" name="checkboxIngQueso">Queso</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="2" name="checkboxIngPimiento">Pimiento</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="3" name="checkboxIngCebolla">Cebolla</td>
+                        </tr>
+                    </table><br>
+                    <table border="0">
+                        <caption>Elije el tamaño...</caption>
+                        <tr>
+                            <th rowspan="3">Tamaños:</th>
+                            <td><input type="radio" value="1" name="tamPequena">Pequeña</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" value="2" name="tamMediana">Mediana</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" value="3" name="tamGrande">Grande</td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </section>
+            <section>
+                <a id="datos_entrega"></a>
+                    <fieldset>
+                        <legend>
+                            <h2><a href="#inicio_pagina"><img src="images/casa.png" alt="iconocasa"></a>Datos de entrega
+                            </h2>
+                        </legend>
+                        <ul>
+                            <li>
+                                <label for="idNombre">Nombre* </label>
+                                <input type="text" name="nombre" id="idNombre" tabindex="1" autofocus required>
+                            </li>
+                            <li>
+                                <label for="idDireccion">Dirección* </label>
+                                <input type="text" name="direccion" id="idDireccion" tabindex="2" required>
+                            </li>
+                            <li>
+                                <label for="idTelefono">Teléfono* </label>
+                                <input type="tel" name="telefono" id="idTelefono" placeholder="000000000"
+                                    pattern="[0-9]{9}" size="9" tabindex="3" required>
+                            </li>
+                            <li>
+                                <label for="idCorreoE">Email</label>
+                                <input type="email" name="correoE" id="idCorreoE" placeholder="nombre@dominio.com"
+                                    tabindex="4">
+                            </li>
+                            <li>
+                                <label for="idHora">Elija una hora preferente de entrega* </label>
+                                <input type="time" name="hora" tabindex="5" id="idHora" required>
+                            </li>
+                            <li>
+                                <label for="idColorCaja">Introduzca el color que desea de la caja</label>
+                                <input type="color" name="color_caja" value="#0f5bff" disabled
+                                    title="Solo quedan cajas azules" tabindex="6" id="idColorCaja">
+                            </li>
+                            <li>
+                                <label for="idInstrucciones">Intrucciones especiales:<br></label>
+                                <textarea name="instrucciones" id="idInstrucciones" rows="5" cols="20"
+                                    tabindex="7"></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+            </section>
+            <section>
+                <a id="claves_entrega"></a>
+                    <fieldset>
+                        <legend>
+                            <h2><a href="#inicio_pagina"><img src="images/casa.png" alt="iconocasa"></a>Claves de
+                                entrega
+                            </h2>
+                        </legend>
+                        <p>
+                            Introduzca el codigo para garantizar la entrega <br>
+                            (1 número seguido de 3 letras)* <input type="text" name="clave_entrega" size="4"
+                                placeholder="0AAA" pattern="[0-9][a-zA-Z]{3}"
+                                title="Introduzca un digito seguido de tres letra mayúsculas">
+                        </p>
+                    </fieldset>
+            </section>
+            <section>
+                <a id="otra_info"></a>
+                    <fieldset>
+                        <legend>
+                            <h2><a href="#inicio_pagina"><img src="images/casa.png" alt="iconocasa"></a>Otra
+                                información</h2>
+                        </legend>
+                        <p>
+                            Introduzca su fecha de nacimiento: <input type="date" name="fecnac"><br>
+                            (El dia de su aniversario tendrá una pizza gratis)<br>
+                            Suba una foto: <input type="file" name="foto" accept=".jpg, .png" multiple>
+                        </p>
+                    </fieldset>
+            </section>
+            <section>
+                <a id="metodo_pago"></a>
+                <fieldset>
+                    <legend>
+                        <h2><a href="#inicio_pagina"><img src="images/casa.png" alt="iconocasa"></a>Método de pago</h2>
+                    </legend>
+                    <p>
+                        Elija el método de pago* <select name="metodoPago">
+                            <option value="1">Efectivo</option>
+                            <option value="2" selected>VISA</option>
+                            <option value="3">Bizum</option>
+                        </select>
+                    </p>
+                </fieldset><br>
+            </section>
+            <section>
+                <a id="enviar"></a>
+                <button type="submit">Hacer pedido</button>
+            </section>
+        </form>
+    </main>
+    <footer style="text-align: center;">
+        2025 Examen de HTML. 1º DAW. IES Pazo da Mercé
+    </footer>
+</body>
+
+</html>
