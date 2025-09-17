@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de HTML5</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Formulario de HTML5</legend>
+        <form action="/guardar.php" method="get">
+            <label for="name">Nombre: </label>
+            <input type="text" id="name" required autofocus title=" Introduzca su nombre">
+            <br><br>
+
+            <label for="mail">Correo: </label>
+            <input type="email" id="mail" required title="Introduzca su correo electrónico">
+            <br><br>
+
+            <label for="url">URL: </label>
+            <input type="url" id="url" title="Escribe la URL de tu web personal">
+            <br><br>
+
+            <label for="fecha">Introduzca la fecha: </label>
+            <input type="date" id="fecha">
+            <br><br>
+
+            <label for="tiempo">Introduzca la hora: </label>
+            <input type="time" id="tiempo">
+            <br><br>
+
+            <label for="fechahora">Introduzca fecha y hora: </label>
+            <input type="datetime-local" id="fechahora">
+            <br><br>
+
+            <label for="mes">Mes: </label>
+            <input type="month" id="mes">
+            <br><br>
+
+            <label for="semana">Semana: </label>
+            <input type="week" id="semana">
+            <br><br>
+
+            <label for="numero">Número (-10 - 10): </label>
+            <input type="number" id="numero" min="-10" max="10" step="1" value="0">
+            <br><br>
+
+            <label for="telef">Teléfono: </label>
+            <input type="tel" id="telef" pattern="[0-9]{9}" title="Formato: 666 666 666">
+            <br><br>
+
+            <label for="busca">Término de busqueda: </label>
+            <input type="search" id="busca" placeholder="Buscar...">
+            <br><br>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="color">Color favorito: </label>
+                <input type="color" id="color" value="#0000ff">
+                <br><br>
+
+                <span>Hobbies: </span>
+                <input type="checkbox" id="cine" value="cine">
+                <label for="cine">Cine</label>
+                <input type="checkbox" id="deportes" value="deporte">
+                <label for="deportes">Deportes</label>
+                <input type="checkbox" id="lectura" value="lectura">
+                <label for="lectura">Lectura</label>
+                <br><br>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+
+        </form>
+    </fieldset>
+</body>
+
+</html>
