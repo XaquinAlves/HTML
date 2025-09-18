@@ -1,37 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Repaso Formularios</title>
-    </head>
-    <body>
-        <form action="" method="post">
-            <label for="name">Nombre: </label>
-            <input type="text" id="name">
-            <br><br>
+<html>
 
-            <label for="surname">Apellidos: </label>
-            <input type="text" id="surname">
-            <br><br>
+<body>
 
-            <label for="sexo">Sexo: </label>
-            <input type="radio" name="sexo" value="hombre" id="hombre">
-            <label for="hombre">Hombre </label>
-            <input type="radio" name="sexo" value="mujer" id="mujer">
-            <label for="mujer">Mujer </label>
-            <br><br>
+    <h2>The method Attribute</h2>
 
-            <label for="email">Correo: </label>
-            <input type="email" id="email">
-            <br><br>
+    <p>This form will be submitted using the GET method:</p>
 
-            <input type="checkbox" id="ofertas">
-            <label for="ofertas">Acepto... </label>
-            <br><br>
+    <form action="/action_page.php" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 
-            <input type="checkbox" id="condiciones">
-            <label for="condiciones">Acepto... </label>
-            <br><br>
-        </form>
-    </body>
+    <p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+
+</body>
+
 </html>

@@ -9,63 +9,66 @@
 <body>
     <fieldset>
         <legend>Formulario de HTML5</legend>
-        <form action="/guardar.php" method="get">
-            <label for="name">Nombre: </label>
-            <input type="text" id="name" required autofocus title=" Introduzca su nombre">
+        <form action="/action_guardar.php" target="_blank" method="get">
+            <label for="fname">Nombre: </label>
+            <input type="text" id="fname" name="fname" autofocus title="Introduzca su nombre"
+                placeholder="Introduzca su nombre">
             <br><br>
 
             <label for="mail">Correo: </label>
-            <input type="email" id="mail" required title="Introduzca su correo electrónico">
+            <input type="email" id="mail" name="mail" title="Introduzca su correo electrónico"
+                placeholder="Introduzca su correo electrónico">
             <br><br>
 
             <label for="url">URL: </label>
-            <input type="url" id="url" title="Escribe la URL de tu web personal">
+            <input type="url" id="url" name="url" title="Escribe la URL de tu web personal"
+                placeholder="Escribe la URL de tu web personal">
             <br><br>
 
             <label for="fecha">Introduzca la fecha: </label>
-            <input type="date" id="fecha">
+            <input type="date" id="fecha" name="fecha">
             <br><br>
 
             <label for="tiempo">Introduzca la hora: </label>
-            <input type="time" id="tiempo">
+            <input type="time" id="tiempo" name="tiempo">
             <br><br>
 
             <label for="fechahora">Introduzca fecha y hora: </label>
-            <input type="datetime-local" id="fechahora">
+            <input type="datetime-local" id="fechahora" name="fechahora">
             <br><br>
 
             <label for="mes">Mes: </label>
-            <input type="month" id="mes">
+            <input type="month" id="mes" name="mes">
             <br><br>
 
             <label for="semana">Semana: </label>
-            <input type="week" id="semana">
+            <input type="week" id="semana" name="semana">
             <br><br>
 
             <label for="numero">Número (-10 - 10): </label>
-            <input type="number" id="numero" min="-10" max="10" step="1" value="0">
+            <input type="number" id="numero" name="numero" min="-10" max="10" step="1" value="0">
             <br><br>
 
             <label for="telef">Teléfono: </label>
-            <input type="tel" id="telef" pattern="[0-9]{9}" title="Formato: 666 666 666">
+            <input type="tel" id="telef" name="telef" pattern="[0-9]{9}" title="Formato: 666 666 666">
             <br><br>
 
             <label for="busca">Término de busqueda: </label>
-            <input type="search" id="busca" placeholder="Buscar...">
+            <input type="search" id="busca" name="busca" placeholder="Buscar...">
             <br><br>
 
             <fieldset>
                 <legend>Preferencias</legend>
                 <label for="color">Color favorito: </label>
-                <input type="color" id="color" value="#0000ff">
+                <input type="color" id="color" name="color" value="#0000ff">
                 <br><br>
 
                 <span>Hobbies: </span>
-                <input type="checkbox" id="cine" value="cine">
+                <input type="checkbox" id="cine" name="hobby" value="cine">
                 <label for="cine">Cine</label>
-                <input type="checkbox" id="deportes" value="deporte">
+                <input type="checkbox" id="deportes" name="hobby" value="deporte">
                 <label for="deportes">Deportes</label>
-                <input type="checkbox" id="lectura" value="lectura">
+                <input type="checkbox" id="lectura" name="hobby" value="lectura">
                 <label for="lectura">Lectura</label>
                 <br><br>
             </fieldset>
@@ -78,3 +81,4 @@
 </body>
 
 </html>
+<!-- http://127.0.0.1:5500/action_guardar.php?fname=Xaquin&mail=xaquinag%40pazodamerce.es&url=https%3A%2F%2Fwww.edu.xunta.gal%2Fcentros%2Fiespazomerce&fecha=2025-09-18&tiempo=12%3A37&fechahora=2025-09-18T12%3A37&mes=2025-09&semana=2025-W38&numero=-10&telef=420420204&busca=&color=%2300ff00&hobby=cine&hobby=deporte -->
