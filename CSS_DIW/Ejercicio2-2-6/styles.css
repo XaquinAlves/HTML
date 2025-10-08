@@ -1,0 +1,27 @@
+@media screen {
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media print {
+    header,
+    footer,
+    nav,
+    aside {
+        visibility: hidden;
+    }
+}
+
+@media all {
+    p {
+        size: 20px;
+        font-weight: bold;
+        margin-right: auto;
+    }
+
+    img {
+        margin-right: auto;
+    }
+}
