@@ -1,0 +1,27 @@
+p[name]{
+    font-weight: bold;
+}
+
+p[name = "parrafo"]{
+    font-size: x-large;
+}
+
+p[name ~= "parrafo"]{
+    font-family: 'Courier New', Courier, monospace, Geneva, Tahoma, sans-serif;
+}
+p[name *="parrafo"] {
+    background-color: darkorange;
+}
+
+p[name |= "en"] {
+    background-color: burlywood;
+}
+
+p[name $=".gal"]{
+    background-color: aqua;
+}
+
+p[name ^= "red"]{
+    background-color: red;
+}
+
