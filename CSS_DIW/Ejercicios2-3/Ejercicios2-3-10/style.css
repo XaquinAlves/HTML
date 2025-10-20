@@ -1,0 +1,11 @@
+textarea:placeholder-shown {
+    background-color: aqua;
+}
+
+input[type="text"]:required {
+    background-color: greenyellow;
+}
+
+input[type="text"]:optional {
+    background-color: gray;
+}
