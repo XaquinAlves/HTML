@@ -32,10 +32,35 @@ p:nth-child(3) {
     background-color: yellow;
 }
 
-p:nth-last-child(5) {
-    background-color: lightgreen;
+p:nth-last-child(9) {
+    background-color: tomato;
 }
 
 span:nth-of-type(2) {
     color: orange
+}
+
+p:nth-last-of-type(2) {
+    color: green;
+}
+
+main > :not(p) {
+    background-color: lightgray;
+}
+
+:root {
+    border: 1px solid black;
+    margin : 10px;
+}
+
+input:enabled {
+    background-color: lightgreen;
+}
+
+input:disabled {
+    background-color: lightcoral;
+}
+
+input[type="checkbox"]:checked + label{
+    font-weight: bold;
 }
