@@ -1,0 +1,21 @@
+a:link {
+    color: red;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: black;
+}
+input:focus {
+    background-color: aqua;
+}
+p:lang(en) {
+    color: blue;
+}
