@@ -1,0 +1,41 @@
+span:first-child {
+    color: red;
+}
+
+p:last-child {
+    color: blue;
+}
+
+p:first-of-type {
+    text-decoration: underline;
+}
+
+span:last-of-type {
+    text-decoration: overline;
+}
+
+p:only-child {
+    font-weight: bold;
+}
+
+a:only-of-type {
+    font-style: italic;
+}
+
+div:empty {
+    border: 3px dotted black;
+    width: 100px;
+    height: 50px;
+}
+
+p:nth-child(3) {
+    background-color: yellow;
+}
+
+p:nth-last-child(5) {
+    background-color: lightgreen;
+}
+
+span:nth-of-type(2) {
+    color: orange
+}
