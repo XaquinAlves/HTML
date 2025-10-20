@@ -1,0 +1,30 @@
+p::first-line {
+    font-weight: bold;
+}
+
+P::first-letter {
+    font-size: 500%;
+}
+
+h1::before {
+    content: "Título: ";
+    font-size: 75%;
+    font-weight: normal;
+    color: gray;
+}
+
+h1::after {
+    content: " (fin del título)";
+    font-size: 75%;
+    font-weight: normal;
+    color: gray;
+}
+
+::marker {
+    color: goldenrod;
+}
+
+::selection {
+    background-color: blue;
+    color: orange;
+}
